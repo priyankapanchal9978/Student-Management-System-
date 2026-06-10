@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model WebApplication2.Models.Student
+
+<h2>Add Student</h2>
+
+<form asp-action="Save" method="post">
+
+    <label>Name</label>
+    <input asp-for="Name" class="form-control" />
+    <br /><br />
+
+    <label>Course</label>
+    <input asp-for="Course" class="form-control" />
+    <br /><br />
+
+    <label>City</label>
+    <input asp-for="City" class="form-control" />
+    <br /><br />
+
+    <button type="submit">Save</button>
+
+</form>
